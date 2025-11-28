@@ -90,5 +90,5 @@ For questions or issues:
 
 ---
 
-**Last Updated:** November 27, 2024  
+**Last Updated:** November 27, 2025  
 **Version:** 1.0
