@@ -313,7 +313,7 @@ This project is licensed under the MIT License.
 
 ## 👥 Team
 
-Built as part of the Penn State Rental Car System project.
+Built as part of the Rental Car System project.
 
 ## 🆘 Support
 
