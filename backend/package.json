@@ -1,0 +1,41 @@
+{
+  "name": "rental-car-backend",
+  "version": "1.0.0",
+  "description": "Rental Car System - Backend Microservices",
+  "private": true,
+  "workspaces": [
+    "services/*",
+    "api-gateway"
+  ],
+  "scripts": {
+    "dev": "concurrently \"npm run dev:auth\" \"npm run dev:reservation\" \"npm run dev:payment\" \"npm run dev:fleet\" \"npm run dev:reporting\" \"npm run dev:gateway\"",
+    "dev:auth": "npm run dev --workspace=auth-service",
+    "dev:reservation": "npm run dev --workspace=reservation-service",
+    "dev:payment": "npm run dev --workspace=payment-service",
+    "dev:fleet": "npm run dev --workspace=fleet-service",
+    "dev:reporting": "npm run dev --workspace=reporting-service",
+    "dev:gateway": "npm run dev --workspace=api-gateway",
+    "test": "npm run test --workspaces",
+    "test:coverage": "npm run test:coverage --workspaces",
+    "lint": "eslint . --ext .js",
+    "format": "prettier --write \"**/*.{js,json,md}\"",
+    "db:migrate": "node database/migrate.js",
+    "db:seed": "node database/seed.js",
+    "db:reset": "npm run db:migrate && npm run db:seed"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "eslint": "^8.57.0",
+    "prettier": "^3.1.1",
+    "nodemon": "^3.0.2",
+    "jest": "^29.7.0",
+    "supertest": "^6.3.3"
+  },
+  "dependencies": {
+    "dotenv": "^16.3.1"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=9.0.0"
+  }
+}
