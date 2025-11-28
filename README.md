@@ -7,6 +7,8 @@
 ![AI Assisted](https://img.shields.io/badge/AI-Assisted-purple)
 ![Development Time](https://img.shields.io/badge/built%20in-3.5%20hours-orange)
 
+<img width="1249" height="1277" alt="image" src="https://github.com/user-attachments/assets/5ff03df1-5b69-4ee7-a3f9-d7582dbb8ea2" />
+
 > **⚡ Built in 3.5 hours using AI-assisted development (Google Antigravity IDE)**
 
 A production-ready, full-stack rental car management system built with microservices architecture, featuring React frontend, Node.js backend services, PostgreSQL database, and Stripe payment integration.
